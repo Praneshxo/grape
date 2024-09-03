@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FEEEF9;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 12%;
+  height: 12%;
+}
+
+.hamburger {
+  width: 30px; /* Width of the hamburger icon */
+  height: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  padding: 1px 0;
+  background-color: #FEEEF9; /* Background color matching the page */
+  cursor: pointer;
+}
+
+.line {
+  height: 3px;
+  background-color: #ff00ff; /* Pink color as in the image */
+  border-radius: 2px;
+}
+
+.line1 {
+  width: 20px; 
+  border-radius: 2px;/* Length of the top line */
+}
+
+.line2 {
+  width: 30px; 
+  border-radius: 2px;/* Length of the middle line */
+}
+
+.line3 {
+  width: 25px; /* Length of the bottom line */
+}
+
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #FEEEF9;
+}
+
+.intro-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: Impact;
+}
+
+.hero-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: inherit;
+  font-style: bold;
+}
+.star{
+  width: 20px;
+}
+.cta-button {
+  background-color: #ff66c4;
+  color: black;
+  border: 2px solid;
+  border-color: black;
+  cursor: pointer;
+}
+.custom-button {
+  padding: 10px 20px;
+  background-color: #ff66c4; /* Pink background color */
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border: none;
+}
+
+.icon-circle {
+  width: 24px;
+  height: 24px;
+  background-color: #0cb7f2; /* Light blue circle background */
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.arrow {
+  font-size: 24px;
+  color: #ff00ff; /* Arrow color */
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.stats-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stats-text {
+  font-size: 18px;
+  text-align: left;
+}
+
+.stats-number {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Section */
+.section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #F55DAF;
   color: white;
+  border-radius: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.section-title {
+  font-size: 22px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.highlight {
+  color: white;
+  padding: 2px 6px;
+}
+
+.benefits {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits h3 {
+  margin-bottom: 10px;
+}
+
+.benefits p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  background-color: #0cb7f2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.images {
+  margin-top: 30px;
+}
+
+.image {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .cta-button {
+    padding: 15px 30px;
+  }
+
+  .stats-image {
+    width: 150px;
+  }
+
+  .stats-text {
+    font-size: 20px;
+  }
+
+  .section {
+    padding: 60px 40px;
+  }
+
+  .benefits {
+    padding: 30px;
+  }
+
+  .read-more {
+    padding: 12px 20px;
+  }
+
+  .image {
+    max-width: 350px;
   }
 }
